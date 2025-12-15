@@ -35,8 +35,8 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 sh '''
-                    docker tag $IMAGE_NAME myregistry.com/myrepo/$IMAGE_NAME
-                    docker push myregistry.com/myrepo/$IMAGE_NAME
+                    docker tag $IMAGE_NAME $IMAGE_NAME
+                    docker push $IMAGE_NAME
                 '''
             }
         }
@@ -44,7 +44,7 @@ pipeline {
         stage('Deploy to Kubernetes') {
             steps {
                 sh '''
-                    kubectl set image deployment/spring-app-deploy spring-app=myregistry.com/myrepo/$IMAGE_NAME -n $NAMESPACE
+                    kubectl set image deployment/spring-app-deploy spring-app=$IMAGE_NAME -n $NAMESPACE
                     kubectl rollout status deployment/spring-app-deploy -n $NAMESPACE
                 '''
             }
