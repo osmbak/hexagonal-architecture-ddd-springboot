@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Job lancé'
+                echo 'Job lancer'
                 // Utilisation de Maven pour builder le JAR
                 sh 'mvn clean package'
             }
