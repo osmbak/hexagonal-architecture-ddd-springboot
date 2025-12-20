@@ -7,7 +7,7 @@ stages {
 
   stage('Build Image') {
     steps {
-      sh 'docker build -t myapp:1.0 .'
+      sh 'docker build -t myapp:1.1 .'
     }
   }
 
