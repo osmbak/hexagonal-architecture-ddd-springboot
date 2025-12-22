@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Job lance'
                 // Utilisation de Maven pour builder le JAR
-                bat 'mvn clean package'
+                bat 'mvn clean install package'
             }
         }
 
