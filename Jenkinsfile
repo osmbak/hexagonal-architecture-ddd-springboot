@@ -39,7 +39,7 @@ pipeline {
     // 3. Optionnel : Actions à faire en cas de succès ou d'échec
     post {
         success {
-            echo 'Deploiement termine avec succes !!!'
+            echo 'Deploiement termine avec succes !!'
         }
         failure {
             echo 'Le pipeline a echoue. Verifiez les logs.'
