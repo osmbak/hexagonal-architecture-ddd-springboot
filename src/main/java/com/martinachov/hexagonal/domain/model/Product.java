@@ -12,6 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 //just model
+//without create dto
 public class Product {
 
     private Long id;
