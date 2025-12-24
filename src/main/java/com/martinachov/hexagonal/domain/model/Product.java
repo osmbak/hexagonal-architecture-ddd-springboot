@@ -12,7 +12,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 //just model
-//without create dto or entity
+//without create dto or entity Branch 24 2
 public class Product {
 
     private Long id;
