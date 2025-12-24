@@ -1,5 +1,5 @@
 package com.martinachov.hexagonal.domain.exception;
-//exception branche_chicky 1
+//exception branch_24
 public class ProductNotFoundException extends RuntimeException{
     
     public ProductNotFoundException(String msg){
